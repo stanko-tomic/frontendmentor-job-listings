@@ -1,0 +1,165 @@
+.jobContainer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2.5rem;
+  padding-block: 1.4rem;
+  border-radius: 0.3rem;
+  position: relative;
+
+  box-shadow: 0px 10px 20px 0px hsla(180, 29%, 50%, 0.25);
+}
+
+.featured {
+  border-left: 6px solid var(--primary-color);
+}
+
+.headingTags {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 0.75rem;
+}
+
+.position .positionTitle {
+  margin-bottom: 0.75rem;
+}
+
+.headingTags .subHeading {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tags div {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0.5rem;
+  padding-block: 0.375rem;
+  border-radius: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.tagNew {
+  background-color: var(--primary-color);
+}
+.tagFeatured {
+  background-color: var(--neutral-very-dark-color);
+}
+
+.info {
+  display: flex;
+  gap: 1rem;
+}
+
+.info {
+  color: var(--neutral-dark-color);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  background-color: var(--neutral-filter-color);
+  color: var(--primary-color);
+  padding-inline: 0.625rem;
+  padding-block: 0.5rem;
+  border-radius: 0.325rem;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.filters div:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 950px) {
+  .jobContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 1.5rem;
+  }
+
+  .leftSide {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .filters {
+    gap: 16px;
+  }
+
+  .imgContainer {
+    position: absolute;
+    top: calc(-24px);
+  }
+
+  .imgContainer img {
+    max-width: 48px;
+    max-height: 48px;
+  }
+
+  .filters button {
+    padding-inline: 0.5rem;
+  }
+
+  .info {
+    margin-bottom: 1.25rem;
+    max-width: 12.5rem;
+    width: 100%;
+  }
+  .position .positionTitle {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .content {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--neutral-dark-color);
+  }
+  .info {
+    gap: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .headingTags {
+    flex-wrap: wrap;
+  }
+}
